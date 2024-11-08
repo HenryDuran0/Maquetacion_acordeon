@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cont_padre {
+    /* border: 2px green solid; */
+    display: flex;
+}
+
+/* Izquierda */
+
+.cont_izq {
+    /* border: 2px red solid; */
+    width: 50%;
+}
+
+.cont_izq h2 {
+    font-size: 2em;
+    padding: 30px;
+}
+
+/* Icono */
+
+.icono_mas {
+    background-color: #2937ef;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.horizontal {
+    font-size: 3.5em;
+    padding-bottom: 8px;
+}
+
+.vertical {
+    color: white;
+    position: absolute;
+    font-size: 1.3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .1s linear;
+}
+
+.rotar {
+    opacity: 0;
+    top: 0;
+    transform: rotate(-90deg);
+}
+
+.azul {
+    color: #2937ef;
+    transition: all .5s linear;
+}
+
+/* Acordeon */
+
+.acordeon_titulo {
+    /* border: 2px purple solid; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+
+.acordeon_titulo i {
+    font-size: 25px;
+}
+
+.acordeon_info {
+    display: none;
+    padding-bottom  : 20px;
+    padding-left: 60px;
+}
+
+.acordeon_info ul {
+    /* border: 2px blue solid; */
+    margin-left: 10px;
+}
+
+/* Derecha */
+
+.cont_der {
+    /* border: 2px blue solid; */
+    width: 50%;
+}
+
+.cont_der h2 {
+    font-size: 2em;
+    padding: 30px;
+}
+
+/* Skills */
+
+.cont_skills {
+    /* border: 2px red solid; */
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.info_skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_skills h3 {
+    font-size: 1.3em;
+}
+
+.progreso_skills {
+    background-color: #f5f6fa;
+    display: flex;
+    border-radius: 20px;
+}
+
+.linea {
+    border-radius: 20px;
+    height: 3px;
+}
+
+.sk1 {
+    background-color: #2937ef;
+    width: 90%;
+}
+
+.sk2 {
+    background-color: #e5c61a;
+    width: 65%;
+}
+
+.sk3 {
+    background-color: #ed4882;
+    width: 100%;
+}
+
+.sk4 {
+    background-color: #2fc986;
+    width: 75%;
+}
+
+@media screen and (max-width:768px){
+    .cont_padre {
+        flex-direction: column;
+    }
+
+    .cont_der {
+        width: 100%;
+    }
+
+    .cont_izq {
+        width: 100%;
+    }
+}
+
